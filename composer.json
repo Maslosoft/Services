@@ -1,0 +1,13 @@
+{
+    "name": "maslosoft/services",
+    "description": "Server Services Status Checker",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Peter Maselkowski",
+            "email": "office@maslosoft.com"
+        }
+    ],
+    "require": {}
+}
