@@ -27,6 +27,22 @@ foreach($toCheck as $name => $doCheck)
     $active[$name] = !(int)$return;
 }
 
+$cmd = 'cat /proc/loadavg';
+$load = [];
+exec($cmd, $load);
+$load = current($load);
+
+$cmd = 'cat /proc/uptime';
+$uptime = [];
+exec($cmd, $uptime);
+$uptime = current($uptime);
+
+$result = new stdClass;
+
+$result->services = $active;
+$result->load = $load;
+$result->uptime = $uptime;
+
 header('Content-Type: application/json');
-echo json_encode($active, JSON_PRETTY_PRINT);
+echo json_encode($result, JSON_PRETTY_PRINT);
 echo PHP_EOL;

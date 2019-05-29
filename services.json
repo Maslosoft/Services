@@ -1,5 +1,9 @@
 {
     "mysql": true,
     "nginx": true,
+    "elasticsearch": true,
+    "mongodb": true,
+    "memcached": true,
+    "postfix": true,
     "snakeoil": true
 }

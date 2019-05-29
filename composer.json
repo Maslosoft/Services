@@ -9,5 +9,7 @@
             "email": "office@maslosoft.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-json": "*"
+    }
 }
